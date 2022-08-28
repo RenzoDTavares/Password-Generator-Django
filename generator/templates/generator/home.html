@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Password generator</title>
+</head>
+<body>
+    <div class="container text-center">
+        <br>
+        <h1>Password generator</h1>
+        <br>
+        <form action="{% url 'password' %}">
+            <select name="length">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8" selected="selected">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select> Length
+            <br>
+            <input type="checkbox" name="uppercase"> Uppercase
+            <br>
+            <input type="checkbox" name="numbers"> Numbers
+            <br>
+            <input type="checkbox" name="special"> Special Characters
+            <br>
+            <input type="submit" value="Generate Password" class="btn btn-primary">
+            <br><br>
+            <div class="input-group mb-3 container text-center" style="width: 400px;" {{ visibil }}>
+                <input type="text" class="form-control" id="text" aria-describedby="basic-addon2" value="{{ password }}" >
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" onclick="clipboard()" type="button">Copy</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function clipboard(){
+            var text = document.getElementById('text');
+            text.select();
+            document.execCommand('copy');
+        }
+    </script>
+    
+</body>
+</html>
