@@ -6,4 +6,4 @@ I chose to create the field that displays the password as an input, so if the us
 
 ![image](https://user-images.githubusercontent.com/43189736/187100025-ffe50007-8237-411c-b7bf-6101ce0d9f33.png)
 
-I finish this project with HTML, CSS, bootstrap, Django, python and javascript technologies.
+I finished this project with HTML, CSS, bootstrap, Django, python and javascript technologies.
