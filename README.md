@@ -1,8 +1,8 @@
 # Password-Generator-Django
 
-This repository was created with the intention of putting into practice studies based on Django, python, with a little Javascript. The project will generate a random password as the user selects the fields that will influence its creation.
+Este repositório foi criado com a intenção de colocar em prática estudos baseados em Django, Python, com um pouco de Javascript. O projeto gerará uma senha aleatória conforme o usuário seleciona os campos que influenciarão sua criação.
 
-I chose to create the field that displays the password as an input, so if the user likes the password and wants to increment, decrement, he can edit the field. For the sake of design, the field with the password starts invisible and is only displayed when the user generates the password, I thought it was interesting to bring this feature. When using Javascript, I used it in the Copy button action, so the user doesn't need to click and copy manually, the Copy button is a good option thinking about the user's usability.
+Eu escolhi criar o campo que exibe a senha como um input, para que, se o usuário gostar da senha e quiser incrementá-la ou decrementá-la, ele possa editar o campo. Por uma questão de design, o campo com a senha começa invisível e só é exibido quando o usuário gera a senha. Achei interessante trazer essa funcionalidade. Ao usar Javascript, utilizei na ação do botão Copiar, para que o usuário não precise clicar e copiar manualmente. O botão Copiar é uma boa opção pensando na usabilidade do usuário.
 
 ![image](https://user-images.githubusercontent.com/43189736/187100025-ffe50007-8237-411c-b7bf-6101ce0d9f33.png)
 
